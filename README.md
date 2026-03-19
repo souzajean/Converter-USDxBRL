@@ -248,6 +248,7 @@ Adicionar o Source e Target
 ### Vamos subir o arquivo source.xsd
 Adicionar o Source e Target
 ![Fluxo](imagens/Screenshot_33.png)
+
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 
@@ -313,28 +314,62 @@ Adicionar o Source e Target
 ```
 
 <br><br>
+
 ### Vamos subir o arquivo source.xsd
-Adicionar o Source e Target
+Adicionar o Source 
 ![Fluxo](imagens/Screenshot_34.png)
-```
 
 
+<br>
 
+### Upload arquivo source.xsd
+Adicionar o Source
+![Fluxo](imagens/Screenshot_35.png)
 
+<br>
 
+### Adicionando arquivo source.xsd
+Adicionar o Source 
+![Fluxo](imagens/Screenshot_36.png)
 
+<br>
 
+### Adicionando arquivo target.xsd
+Adicionar o Target
+![Fluxo](imagens/Screenshot_37.png)
 
+<br>
 
+### Realizando as conexões
+Adicionar o Target
+![Fluxo](imagens/Screenshot_38.png)
 
+<br>
 
+### Realizando as as conexões na funções
+Adicionar o Target
+![Fluxo](imagens/Screenshot_39.png)
 
+<br>
 
+### Realizando as conexões na funções
+Adicionar o Target
+![Fluxo](imagens/Screenshot_40.png)
 
+<br>
 
+### Adicionadno o Multiply nas Funções
+![Fluxo](imagens/Screenshot_41.png)
 
+<br>
 
+### Adicionadno o formatNumber nas Funções
+![Fluxo](imagens/Screenshot_42.png)
 
+br>
+
+### Conectando as funções
+![Fluxo](imagens/Screenshot_43.png)
 
 
 
