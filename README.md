@@ -107,69 +107,125 @@ Order
 
 <br>
 
-### Configurando Content Modifier - Header
+### Adicionando Request Replay 
+![Fluxo](imagens/Screenshot_11.png)
+
+<br>
+
+### Adicionando  JSON to XML Converter
+
 ![Fluxo](imagens/Screenshot_12.png)
-```
-Create  -  setHeader  - Constant  -  ValorHeader
-```
+
 <br>
 
-### Renomear  Content Modifier - Property
-
+### Renomeando o  JSON to XML Converter
 ![Fluxo](imagens/Screenshot_13.png)
-
 ```
-setProperty
+JSON to XML Dolar
 ```
 <br>
 
-### Configurando Content Modifier - Property
+### Adicionando Multicast Paralel
 ![Fluxo](imagens/Screenshot_14.png)
-```
-Create  -  setProperty  - Constant  -  ValorProperty
-```
+
 <br>
 
-### Renomear  Content Modifier - Body
+### Renomeando Multicast Paralel
 ![Fluxo](imagens/Screenshot_15.png)
 ```
-Prepare Email Payload
+Parallel Multicast
 ```
+
 <br>
 
-### Configurando o Content Modifier - Body
+### Adicionando o Content Modifier
 ![Fluxo](imagens/Screenshot_16.png)
 
-Alteramos o Type: 
-```
-Expression
-```
 <br>
 
-No Body:
+### Renomeando o Content Modifier
+![Fluxo](imagens/Screenshot_16.png)
 ```
-Message Header:       ${header.setHeader}
-Exchange Property:    ${property.setProperty}
-Message Body CPI:     Mensagem do CPI
-Message Body Postman: ${body}
+setOrderXML
 ```
+
 <br>
 
-### Configurando o Postman
-![Fluxo](imagens/Screenshot_17.png)
-```
-Mensagem do Postman
-```
 
-Resultado:
-```
-Message Header:       ValorHeader
-Exchange Property:    ValorProperty
-Message Body CPI:     Mensagem do CPI
-Message Body Postman: Mensagem do Postman
-```
 
-<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## 📦 Exemplo prático – iFlow para baixar
 
