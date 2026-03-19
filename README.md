@@ -7,6 +7,8 @@ Este projeto demonstra, na prática, como construir um iFlow no SAP BTP Integrat
 
 O cenário implementado realiza a conversão de valores em USD para BRL, combinando dados de entrada com uma API externa de câmbio em tempo real.
 
+<br>
+
 ![Fluxo](imagens/capa-linkedin.png)
 
 
