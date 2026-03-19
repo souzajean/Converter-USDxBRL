@@ -364,13 +364,11 @@ Adicionar o Target
 <br>
 
 ### Realizando as as conexões na funções
-Adicionar o Target
 ![Fluxo](imagens/Screenshot_39.png)
 
 <br>
 
 ### Realizando as conexões na funções
-Adicionar o Target
 ![Fluxo](imagens/Screenshot_40.png)
 
 <br>
@@ -383,7 +381,7 @@ Adicionar o Target
 ### Adicionadno o formatNumber nas Funções
 ![Fluxo](imagens/Screenshot_42.png)
 
-br>
+<br>
 
 ### Conectando as funções
 ![Fluxo](imagens/Screenshot_43.png)
