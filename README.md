@@ -337,6 +337,23 @@ Adicionar o Target
 ### Adicionando arquivo target.xsd
 Adicionar o Target
 ![Fluxo](imagens/Screenshot_37.png)
+```
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Order">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="OrderId" type="xs:string"/>
+        <xs:element name="AmountBRL" type="xs:decimal"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
+```
+
 
 <br>
 
