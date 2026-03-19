@@ -144,12 +144,36 @@ Parallel Multicast
 <br>
 
 ### Renomeando o Content Modifier
-![Fluxo](imagens/Screenshot_16.png)
+![Fluxo](imagens/Screenshot_17.png)
 ```
 setOrderXML
 ```
 
 <br>
+
+### Configurando o Content Modifier
+![Fluxo](imagens/Screenshot_18.png)
+```
+Content Modifier - setOrderXML
+Exchange Property
+create - _orderXML - Expression - ${body} - java.lang.String
+```
+
+<br>
+
+### Adicionando o Join
+![Fluxo](imagens/Screenshot_19.png)
+
+<br>
+
+### Adicionando o Gather
+![Fluxo](imagens/Screenshot_20.png)
+
+### Configurando o Gather
+![Fluxo](imagens/Screenshot_21.png)
+
+### Conectando o Request Replay no Receiver
+![Fluxo](imagens/Screenshot_22.png)
 
 
 
