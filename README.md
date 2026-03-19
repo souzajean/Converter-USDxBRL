@@ -383,35 +383,13 @@ Adicionar o Target
 
 <br>
 
-### Conectando as funções
+### Configurando no Postman
 ![Fluxo](imagens/Screenshot_43.png)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br>
+<br>
 
 
 
