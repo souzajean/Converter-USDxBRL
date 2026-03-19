@@ -169,35 +169,154 @@ create - _orderXML - Expression - ${body} - java.lang.String
 ### Adicionando o Gather
 ![Fluxo](imagens/Screenshot_20.png)
 
+<br>
+
 ### Configurando o Gather
 ![Fluxo](imagens/Screenshot_21.png)
+
+<br>
 
 ### Conectando o Request Replay no Receiver
 ![Fluxo](imagens/Screenshot_22.png)
 
+<br>
 
+### Adicionando o HTTP
+![Fluxo](imagens/Screenshot_23.png)
 
+<br>
 
+### Cofigurando o Request Replay
+![Fluxo](imagens/Screenshot_24.png)
+```
+Request Reply
+Address: https://api.frankfurter.app/latest
+Query: from=USD&to=BRL
+Proxy Type: Internet
+Method: GET
+Authentication: None
+```
 
+<br>
 
+### Conectando o Request Replay no JSON to XML Dolar
+![Fluxo](imagens/Screenshot_25.png)
 
+<br>
 
+### Conectando o Request Replay no Receiver
+![Fluxo](imagens/Screenshot_26.png)
+```
+Name: JSON to XML Dolar
+Processing - Add XML Root Element
+Name: Exchange
+```
 
+<br>
 
+### Conectando o JSON to XML Dolar no Join
+![Fluxo](imagens/Screenshot_27.png)
 
+<br>
 
+### Iflow vai ficar dessa forma
+![Fluxo](imagens/Screenshot_28.png)
 
+<br>
 
+### Adicionar Message Mapping
+![Fluxo](imagens/Screenshot_29.png)
 
+<br>
 
+### Renomeando o Message Mapping
+![Fluxo](imagens/Screenshot_30.png)
 
+<br>
 
+### Criando o Message Mapping
+![Fluxo](imagens/Screenshot_31.png)
+```
+mm_req
+```
+<br>
 
+### Message Mapping
+Adicionar o Source e Target
+![Fluxo](imagens/Screenshot_32.png)
 
+### Vamos subir o arquivo source.xsd
+Adicionar o Source e Target
+![Fluxo](imagens/Screenshot_33.png)
+```
+<?xml version="1.0" encoding="UTF-8"?>
 
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
+  <xs:element name="Messages">
+    <xs:complexType>
+      <xs:sequence>
 
+        <!-- Message1 -->
+        <xs:element name="Message1">
+          <xs:complexType>
+            <xs:sequence>
 
+              <xs:element name="Exchange">
+                <xs:complexType>
+                  <xs:sequence>
+
+                    <xs:element name="amount" type="xs:decimal"/>
+                    <xs:element name="base" type="xs:string"/>
+                    <xs:element name="date" type="xs:string"/>
+
+                    <xs:element name="rates">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="BRL" type="xs:decimal"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- Message2 -->
+        <xs:element name="Message2">
+          <xs:complexType>
+            <xs:sequence>
+
+              <xs:element name="Order">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="OrderId" type="xs:string"/>
+                    <xs:element name="Amount" type="xs:decimal"/>
+                    <xs:element name="currency" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
+```
+
+<br><br>
+### Vamos subir o arquivo source.xsd
+Adicionar o Source e Target
+![Fluxo](imagens/Screenshot_34.png)
+```
 
 
 
