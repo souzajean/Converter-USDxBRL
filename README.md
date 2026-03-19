@@ -186,7 +186,7 @@ create - _orderXML - Expression - ${body} - java.lang.String
 
 <br>
 
-### Cofigurando o Request Replay
+### Configurando o Request Replay
 ![Fluxo](imagens/Screenshot_24.png)
 ```
 Request Reply
