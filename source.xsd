@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Messages">
+    <xs:complexType>
+      <xs:sequence>
+
+        <!-- Message1 -->
+        <xs:element name="Message1">
+          <xs:complexType>
+            <xs:sequence>
+
+              <xs:element name="Exchange">
+                <xs:complexType>
+                  <xs:sequence>
+
+                    <xs:element name="amount" type="xs:decimal"/>
+                    <xs:element name="base" type="xs:string"/>
+                    <xs:element name="date" type="xs:string"/>
+
+                    <xs:element name="rates">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="BRL" type="xs:decimal"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- Message2 -->
+        <xs:element name="Message2">
+          <xs:complexType>
+            <xs:sequence>
+
+              <xs:element name="Order">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="OrderId" type="xs:string"/>
+                    <xs:element name="Amount" type="xs:decimal"/>
+                    <xs:element name="currency" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
