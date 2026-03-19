@@ -44,7 +44,7 @@ Consolidar múltiplas fontes em um único payload
 ### Criando o Integration Flow
 ![Fluxo](imagens/Screenshot_2.png)
 ```
-CustomContentModifier
+Converter_USDxBRL
 ```
 <br><br>
 
@@ -56,7 +56,7 @@ CustomContentModifier
 ### Criando o Integration Flow
 ![Fluxo](imagens/Screenshot_4.png)
 ```
-ModifyContentModifier
+ConvertendoDollarparaReal
 ```
 
 <br><br>
@@ -71,42 +71,38 @@ ModifyContentModifier
 
 <br>
 
-### Remover o Receiver
-![Fluxo](imagens/Screenshot_6.png)
-
-<br>
-
 ### :three:  HTTPS Sender
 ### Adicionando o HTTPS
-![Fluxo](imagens/Screenshot_7.png)
-
+![Fluxo](imagens/Screenshot_6.png)
+```
+Address: /convertendodolar
+```
 <br>
 
 
 ### Configurando o HTTPS
 O fluxo é iniciado através de um endpoint HTTPS, permitindo que aplicações externas consultem o serviço.
-![Fluxo](imagens/Screenshot_8.png)
+![Fluxo](imagens/Screenshot_7.png)
 ```
-Address: /modificar
+Address: /convertendodolar
 ```
 <br>
 
-### :four:  Content Modifier
-### Adicionando o Content Modifier
-Vamos criar 3 Content Modifier na conexão
+### :four:  JSON to XML Converter
+### Adicionando o JSON to XML Converter
+![Fluxo](imagens/Screenshot_8.png)
+
+<br>
+
+### Renomeando o JSON to XML Converter
 ![Fluxo](imagens/Screenshot_9.png)
 
 <br>
 
-### Ficando dessa forma
+### Configurando o JSON to XML Converter
 ![Fluxo](imagens/Screenshot_10.png)
-
-<br>
-
-### Renomear  Content Modifier - Header
-![Fluxo](imagens/Screenshot_11.png)
 ```
-setHeader
+Order
 ```
 
 <br>
