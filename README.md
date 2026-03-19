@@ -328,8 +328,8 @@ Adicionar o Source
 
 <br>
 
-### Adicionando arquivo source.xsd
-Adicionar o Source 
+### Adicionando arquivo target.xsd
+Adicionar o Target
 ![Fluxo](imagens/Screenshot_36.png)
 
 <br>
