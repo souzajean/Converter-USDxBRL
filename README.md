@@ -367,7 +367,7 @@ Adicionar o Target
 
 <br>
 
-### Adicionadno o Multiply nas Funções
+### Adicionando o Multiply nas Funções
 ![Fluxo](imagens/Screenshot_41.png)
 
 <br>
