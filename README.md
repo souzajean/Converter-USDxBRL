@@ -367,7 +367,8 @@ Adicionar o Target
 
 <br>
 
-### Adicionando o Multiply nas Funções
+### Realizando as conexões na funções Multiply
+Primeiro aqui vamos remover a conexão BRL com AmountBRL.
 ![Fluxo](imagens/Screenshot_41.png)
 
 <br>
