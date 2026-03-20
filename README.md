@@ -372,7 +372,7 @@ Adicionar o Target
 
 <br>
 
-### Adicionadno o formatNumber nas Funções
+### Adicionando o formatNumber nas Funções
 ![Fluxo](imagens/Screenshot_42.png)
 
 <br>
